@@ -1,6 +1,6 @@
 # Midterm - SI 364 F18
 
-### Troy said it was alright to delete all classes, forms, routes and templates associated with 'Name'; therefore, you should not be looking for these in the application. 
+Troy said it was alright to delete all classes, forms, routes and templates associated with 'Name' --- therefore, you should not be looking for these in the application. 
 
 ## Instructions
 

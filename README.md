@@ -8,15 +8,15 @@ This application uses the Ticketmaster Discovery API.
 
 If you submit a city (Las Vegas, Chicago, Phoenix, Boston, etc.) you will find the top ten event results (or fewer, if there are less than ten associated results), each with respective:
 	
-	* `URL`
-	* `Genre`
-	* `Venue`
+* URL
+* Genre
+* Venue
 
 If you submit a keyword (Drake, Comedy, Basketball, Movie, Best, etc.) into the Keyword Entry fomm OR enter a keyword into the dynamic URL, you will find the top ten event results (or fewer, if there are less than ten associated results), each with respective:
 
-	* `URL`
-	* `Genre`
-	* `Venue`
+* URL
+* Genre
+* Venue
 
 Finally, this application saves your results into two databases (events, venues).
 

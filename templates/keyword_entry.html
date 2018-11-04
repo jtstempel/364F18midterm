@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content1 %}
+{% if form %}
+<h1> Type Keyword Into URL! </h1>
+<h1> ...Or Search Here: </h1>
+	<form method = 'GET'>
+		{{ form.hidden_tag() }}
+		{% for message in get_flashed_messages() %}
+      	{{ message }}
+      	{% endfor %}
+      	<p>{{ form.keyword_search.label }}{{ form.keyword_search() }}</p>
+      	{{ form.submit() }}
+  	</form>
+{% endif %}
+
+<h2> Top 10 Events: </h2>
+{% if list_results %}
+	<ul>
+	{% for item in list_results %}
+	<li><b>{{ item[0] }}</b><br><a href="{{ item[1] }}">Go to page.</a><br>Genre: {{ item[2] }}<br>Venue: {{ item[3] }}<br></li>
+{% endfor %}
+{% else %}
+Sorry, no results exist for your search term. Please retype a new term in the dynamic URL.
+{% endif %}
+
+</ul>
+
+{% endblock %}

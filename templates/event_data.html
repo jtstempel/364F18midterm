@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content1 %}
+{% if list_results %}
+<h1> Top 10 Events in {{name_city}}: </h1>
+
+<ul>
+{% for item in list_results %}
+	<li><b>{{ item[0] }}</b><br><a href="{{ item[1] }}">Go to page.</a><br>Genre: {{ item[2] }}<br>Venue: {{ item[3] }}<br></li>
+{% endfor %}
+</ul>
+{% else %}
+<h3> Sorry, no results exist for your search term. Please return to the City Entry form and try again.</h3>
+{% endif %}
+{% endblock %}
